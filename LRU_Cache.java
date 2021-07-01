@@ -1,5 +1,5 @@
 //Leetcode 146
-public class LRU_Cache {
+public class LRUCache {
 class Node {
 	int key;
 	int value;
@@ -16,7 +16,7 @@ class Node {
 	private Node last;
 	private int capacity;
 
-	public LRU_Cache(final int capacity) {
+	public LRUCache(final int capacity) {
 		this.capacity = capacity;
 		head = new Node(0, 0);
 		last = new Node(0, 0);
